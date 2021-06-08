@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50386EAD830053D7A7E2DD9E /* Pods_ios_dca_calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C2F3E53B3907C9B3330DA7 /* Pods_ios_dca_calculator.framework */; };
 		75645579266EB59900DCE32A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75645578266EB59900DCE32A /* AppDelegate.swift */; };
 		7564557B266EB59900DCE32A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564557A266EB59900DCE32A /* SceneDelegate.swift */; };
-		7564557D266EB59900DCE32A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564557C266EB59900DCE32A /* ViewController.swift */; };
 		75645580266EB59900DCE32A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7564557E266EB59900DCE32A /* Main.storyboard */; };
 		75645582266EB59C00DCE32A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75645581266EB59C00DCE32A /* Assets.xcassets */; };
 		75645585266EB59C00DCE32A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75645583266EB59C00DCE32A /* LaunchScreen.storyboard */; };
+		7564558E266EBFD900DCE32A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7564558D266EBFD900DCE32A /* Podfile */; };
+		75645597266EC1EC00DCE32A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75645596266EC1EC00DCE32A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40C2F3E53B3907C9B3330DA7 /* Pods_ios_dca_calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_dca_calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75645575266EB59900DCE32A /* ios-dca-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dca-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75645578266EB59900DCE32A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7564557A266EB59900DCE32A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7564557C266EB59900DCE32A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7564557F266EB59900DCE32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75645581266EB59C00DCE32A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75645584266EB59C00DCE32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75645586266EB59C00DCE32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7564558D266EBFD900DCE32A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		75645596266EC1EC00DCE32A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FFC68193C355A68F64A9AD4 /* Pods-ios-dca-calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.release.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.release.xcconfig"; sourceTree = "<group>"; };
+		9603BE8751B4280002A78B33 /* Pods-ios-dca-calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.debug.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50386EAD830053D7A7E2DD9E /* Pods_ios_dca_calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,11 @@
 		7564556C266EB59900DCE32A = {
 			isa = PBXGroup;
 			children = (
+				7564558D266EBFD900DCE32A /* Podfile */,
 				75645577266EB59900DCE32A /* ios-dca-calculator */,
 				75645576266EB59900DCE32A /* Products */,
+				A3710D234F0F98EA2FB75AF4 /* Pods */,
+				CB20341F05CA0A21E03A1CFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +68,30 @@
 			children = (
 				75645578266EB59900DCE32A /* AppDelegate.swift */,
 				7564557A266EB59900DCE32A /* SceneDelegate.swift */,
-				7564557C266EB59900DCE32A /* ViewController.swift */,
+				75645596266EC1EC00DCE32A /* ViewController.swift */,
 				7564557E266EB59900DCE32A /* Main.storyboard */,
 				75645581266EB59C00DCE32A /* Assets.xcassets */,
 				75645583266EB59C00DCE32A /* LaunchScreen.storyboard */,
 				75645586266EB59C00DCE32A /* Info.plist */,
 			);
 			path = "ios-dca-calculator";
+			sourceTree = "<group>";
+		};
+		A3710D234F0F98EA2FB75AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9603BE8751B4280002A78B33 /* Pods-ios-dca-calculator.debug.xcconfig */,
+				7FFC68193C355A68F64A9AD4 /* Pods-ios-dca-calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB20341F05CA0A21E03A1CFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C2F3E53B3907C9B3330DA7 /* Pods_ios_dca_calculator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75645589266EB59C00DCE32A /* Build configuration list for PBXNativeTarget "ios-dca-calculator" */;
 			buildPhases = (
+				D27372F6D56B0E9CDA4A5271 /* [CP] Check Pods Manifest.lock */,
 				75645571266EB59900DCE32A /* Sources */,
 				75645572266EB59900DCE32A /* Frameworks */,
 				75645573266EB59900DCE32A /* Resources */,
+				641C27F1ED6352337B876BB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,18 +155,61 @@
 			files = (
 				75645585266EB59C00DCE32A /* LaunchScreen.storyboard in Resources */,
 				75645582266EB59C00DCE32A /* Assets.xcassets in Resources */,
+				7564558E266EBFD900DCE32A /* Podfile in Resources */,
 				75645580266EB59900DCE32A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		641C27F1ED6352337B876BB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D27372F6D56B0E9CDA4A5271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-dca-calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75645571266EB59900DCE32A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7564557D266EB59900DCE32A /* ViewController.swift in Sources */,
+				75645597266EC1EC00DCE32A /* ViewController.swift in Sources */,
 				75645579266EB59900DCE32A /* AppDelegate.swift in Sources */,
 				7564557B266EB59900DCE32A /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +355,7 @@
 		};
 		7564558A266EB59C00DCE32A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9603BE8751B4280002A78B33 /* Pods-ios-dca-calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		7564558B266EB59C00DCE32A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFC68193C355A68F64A9AD4 /* Pods-ios-dca-calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
