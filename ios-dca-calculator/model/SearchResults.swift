@@ -8,7 +8,7 @@
 import Foundation
 
 struct SearchResults: Decodable {
-  let items: [SearchResults]
+  let items: [SearchResult]
   enum CodingKeys: String, CodingKey {
     case items = "bestMatches"
   }
