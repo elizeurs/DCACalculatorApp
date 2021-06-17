@@ -10,6 +10,11 @@ import Combine
 
 class SearchTableViewController: UITableViewController {
   
+  private enum Mode {
+    case onboading
+    case search
+  }
+  
   private lazy var searchController: UISearchController = {
     let sc = UISearchController(searchResultsController: nil)
     sc.searchResultsUpdater = self
@@ -23,18 +28,24 @@ class SearchTableViewController: UITableViewController {
   private let apiService = APIService()
   private var subscribers = Set<AnyCancellable>()
   private var searchResults: SearchResults?
+  @Published private var mode: Mode = .onboading
   @Published private var searchQuery = String()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     setupNavigationBar()
+    setupTableView()
     observeForm()
 //    performSearch()
   }
   
   private func setupNavigationBar() {
     navigationItem.searchController = searchController
+  }
+  
+  func setupTableView() {
+    tableView.tableFooterView = UIView()
   }
   
   private func observeForm() {
@@ -56,6 +67,17 @@ class SearchTableViewController: UITableViewController {
           self.tableView.reloadData()
         }.store(in: &self.subscribers)
       }.store(in: &subscribers)
+    
+    $mode.sink { (mode) in
+      switch mode {
+      case .onboading:
+        let redView = UIView()
+        redView.backgroundColor = .red
+        self.tableView.backgroundView = redView
+      case .search:
+        self.tableView.backgroundView = nil
+      }
+    }.store(in: &subscribers)
   }
   
 //  private func performSearch() {
@@ -81,6 +103,11 @@ extension SearchTableViewController: UISearchResultsUpdating, UISearchController
   func updateSearchResults(for searchController: UISearchController) {
     guard let searchQuery  =  searchController.searchBar.text, !searchQuery.isEmpty else { return }
     self.searchQuery = searchQuery
+  }
+  
+  func willPresentSearchController(_ searchController: UISearchController) {
+//    print("will present")
+    mode = .search
   }
 }
 
