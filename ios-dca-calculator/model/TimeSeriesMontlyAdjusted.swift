@@ -11,6 +11,11 @@ struct TimeSeriesMontlyAdjusted: Decodable {
   
   let meta: Meta
   let timeSeries: [String: OHLC]
+  
+  enum CodingKeys: String, CodingKey {
+    case meta = "Meta Data"
+    case timeSeries  = "Monthly Adjusted Time Series"
+  }
 }
 
 struct Meta: Decodable {
