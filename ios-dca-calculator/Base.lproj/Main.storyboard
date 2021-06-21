@@ -349,16 +349,10 @@
                                                                     <rect key="frame" x="0.0" y="32" width="382" height="14"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial date of investment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHH-cX-Vw1">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="139" height="14"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="14" id="9rO-oo-lG7"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(USD)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-jo-K9B">
-                                                                            <rect key="frame" x="143" y="0.0" width="239" height="14"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -391,13 +385,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="VJH-Dx-l2M"/>
                     <connections>
+                        <outlet property="investmentAmountCurrencyLabel" destination="mqc-SD-Zmz" id="2qD-Df-qo3"/>
                         <outlet property="nameLabel" destination="2KF-Oc-XGF" id="dI4-kg-f6a"/>
                         <outlet property="symbolLabel" destination="UxO-fh-RBL" id="HfK-Y8-kA0"/>
                         <outletCollection property="currencyLabels" destination="9sI-4M-Sp5" collectionClass="NSMutableArray" id="9hI-Dd-655"/>
-                        <outletCollection property="currencyLabels" destination="mqc-SD-Zmz" collectionClass="NSMutableArray" id="DsO-j2-qJ2"/>
                         <outletCollection property="currencyLabels" destination="zP9-Fe-W8l" collectionClass="NSMutableArray" id="1ua-kx-2uj"/>
                         <outletCollection property="currencyLabels" destination="eQN-DG-9WW" collectionClass="NSMutableArray" id="ue8-bz-d2P"/>
-                        <outletCollection property="currencyLabels" destination="Oe0-jo-K9B" collectionClass="NSMutableArray" id="Pbw-3n-SBP"/>
                         <segue destination="CfK-k2-xRN" kind="show" id="dZt-dt-8WS"/>
                     </connections>
                 </tableViewController>
