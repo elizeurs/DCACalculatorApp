@@ -393,6 +393,11 @@
                     <connections>
                         <outlet property="nameLabel" destination="2KF-Oc-XGF" id="dI4-kg-f6a"/>
                         <outlet property="symbolLabel" destination="UxO-fh-RBL" id="HfK-Y8-kA0"/>
+                        <outletCollection property="currencyLabels" destination="9sI-4M-Sp5" collectionClass="NSMutableArray" id="9hI-Dd-655"/>
+                        <outletCollection property="currencyLabels" destination="mqc-SD-Zmz" collectionClass="NSMutableArray" id="DsO-j2-qJ2"/>
+                        <outletCollection property="currencyLabels" destination="zP9-Fe-W8l" collectionClass="NSMutableArray" id="1ua-kx-2uj"/>
+                        <outletCollection property="currencyLabels" destination="eQN-DG-9WW" collectionClass="NSMutableArray" id="ue8-bz-d2P"/>
+                        <outletCollection property="currencyLabels" destination="Oe0-jo-K9B" collectionClass="NSMutableArray" id="Pbw-3n-SBP"/>
                         <segue destination="CfK-k2-xRN" kind="show" id="dZt-dt-8WS"/>
                     </connections>
                 </tableViewController>
