@@ -443,7 +443,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dateLabel" destination="WQS-zc-B1U" id="GBI-Hv-I5e"/>
+                                    <outlet property="monthLabel" destination="WQS-zc-B1U" id="GBI-Hv-I5e"/>
                                     <outlet property="monthsAgoLabel" destination="cHv-x9-FFi" id="eoU-Ae-gpp"/>
                                 </connections>
                             </tableViewCell>
