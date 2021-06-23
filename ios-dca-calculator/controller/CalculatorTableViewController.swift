@@ -46,6 +46,17 @@ class CalculatorTableViewController: UITableViewController {
        let dateSelectionTableViewController = segue.destination as? DateSelectionTableViewController,
        let timeSeriesMonthlyAdjusted = sender as? TimeSeriesMontlyAdjusted {
       dateSelectionTableViewController.timeSeriesMontlyAdjusted = timeSeriesMonthlyAdjusted
+      dateSelectionTableViewController.didSelectDate = {  [weak self] index in
+        self?.handleDateSelection(at: index)
+      }
+    }
+  }
+  
+  private func handleDateSelection(at index: Int) {
+    if let monthInfos = asset?.timeSeriesMonthlyAdjusted.getMonthInfos() {
+      let monthInfo = monthInfos[index]
+      let dateString = monthInfo.date.MMYYFormat
+      initialDateOfInvestmentTextField.text = dateString
     }
   }
 }
