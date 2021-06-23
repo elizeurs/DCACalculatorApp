@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class CalculatorTableViewController: UITableViewController {
   
@@ -16,15 +17,20 @@ class CalculatorTableViewController: UITableViewController {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet var currencyLabels: [UILabel]!
   @IBOutlet weak var investmentAmountCurrencyLabel: UILabel!
+  @IBOutlet weak var dateSlider: UISlider!
   
   var asset: Asset?
   
-  private var initialDateOfInvestmentIndex: Int?
+  @Published private var initialDateOfInvestmentIndex: Int?
+  
+  private var subscribers = Set<AnyCancellable>()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
     setupTextFields()
+    setupDateSlider()
+    observeForm()
   }
   
   private  func  setupViews() {
@@ -41,6 +47,23 @@ class CalculatorTableViewController: UITableViewController {
     initialInvestmentAmountTextField.addDoneButton()
     monthlyDollarCostAveragingTextField.addDoneButton()
     initialDateOfInvestmentTextField.delegate = self
+  }
+  
+  private func setupDateSlider() {
+    if let count = asset?.timeSeriesMonthlyAdjusted.getMonthInfos().count {
+      dateSlider.maximumValue = count.floatValue
+    }
+  }
+  
+  private func observeForm() {
+    $initialDateOfInvestmentIndex.sink { [weak self] (index) in
+//      print(index)
+      guard let index = index else { return }
+      self?.dateSlider.value = index.floatValue
+      if let dateString = self?.asset?.timeSeriesMonthlyAdjusted.getMonthInfos()[index].date.MMYYFormat {
+        self?.initialDateOfInvestmentTextField.text = dateString
+      }
+    }.store(in: &subscribers)
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,6 +87,11 @@ class CalculatorTableViewController: UITableViewController {
       let dateString = monthInfo.date.MMYYFormat
       initialDateOfInvestmentTextField.text = dateString
     }
+  }
+  
+  @IBAction func dateSliderDidChange(_ sender: UISlider) {
+//    print(sender.value)
+    initialDateOfInvestmentIndex = Int(sender.value)
   }
 }
 
