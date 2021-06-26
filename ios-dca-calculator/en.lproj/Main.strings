@@ -1,0 +1,78 @@
+
+/* Class = "UILabel"; text = "S&P 500 ETF"; ObjectID = "2KF-Oc-XGF"; */
+"2KF-Oc-XGF.text" = "S&P 500 ETF";
+
+/* Class = "UILabel"; text = "EQUITY USD"; ObjectID = "5Eh-lp-Bzd"; */
+"5Eh-lp-Bzd.text" = "EQUITY USD";
+
+/* Class = "UILabel"; text = "Initial investment amount"; ObjectID = "9hf-nR-6lu"; */
+"9hf-nR-6lu.text" = "Initial investment amount";
+
+/* Class = "UILabel"; text = "(USD)"; ObjectID = "9sI-4M-Sp5"; */
+"9sI-4M-Sp5.text" = "(USD)";
+
+/* Class = "UILabel"; text = "BA"; ObjectID = "BAa-ha-9UL"; */
+"BAa-ha-9UL.text" = "BA";
+
+/* Class = "UITextField"; placeholder = "Enter the initial date of investment"; ObjectID = "CyR-sa-oQn"; */
+"CyR-sa-oQn.placeholder" = "Enter the initial date of investment";
+
+/* Class = "UILabel"; text = "Annual Return"; ObjectID = "JUA-UB-Qge"; */
+"JUA-UB-Qge.text" = "Annual Return";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "K2E-sK-jah"; */
+"K2E-sK-jah.text" = "100";
+
+/* Class = "UILabel"; text = "5000"; ObjectID = "MHA-pj-3a6"; */
+"MHA-pj-3a6.text" = "5000";
+
+/* Class = "UILabel"; text = "Investment amount"; ObjectID = "PkK-Px-c8c"; */
+"PkK-Px-c8c.text" = "Investment amount";
+
+/* Class = "UILabel"; text = "Monthly dollar cost averaging amount"; ObjectID = "QSF-qd-jKE"; */
+"QSF-qd-jKE.text" = "Monthly dollar cost averaging amount";
+
+/* Class = "UITextField"; placeholder = "Enter your investment amount"; ObjectID = "Tu7-Al-PRR"; */
+"Tu7-Al-PRR.placeholder" = "Enter your investment amount";
+
+/* Class = "UILabel"; text = "10.5%"; ObjectID = "U0P-pU-6JU"; */
+"U0P-pU-6JU.text" = "10.5%";
+
+/* Class = "UITextField"; placeholder = "Montly dollar cost averaging amount"; ObjectID = "Uvo-eQ-e0K"; */
+"Uvo-eQ-e0K.placeholder" = "Montly dollar cost averaging amount";
+
+/* Class = "UILabel"; text = "SPY"; ObjectID = "UxO-fh-RBL"; */
+"UxO-fh-RBL.text" = "SPY";
+
+/* Class = "UILabel"; text = "December 2020"; ObjectID = "WQS-zc-B1U"; */
+"WQS-zc-B1U.text" = "December 2020";
+
+/* Class = "UILabel"; text = "The Boeing Company"; ObjectID = "YTw-kT-iDb"; */
+"YTw-kT-iDb.text" = "The Boeing Company";
+
+/* Class = "UILabel"; text = "Current  Value "; ObjectID = "aSe-sA-TGJ"; */
+"aSe-sA-TGJ.text" = "Current  Value ";
+
+/* Class = "UILabel"; text = "Recent"; ObjectID = "cHv-x9-FFi"; */
+"cHv-x9-FFi.text" = "Recent";
+
+/* Class = "UILabel"; text = "(USD)"; ObjectID = "eQN-DG-9WW"; */
+"eQN-DG-9WW.text" = "(USD)";
+
+/* Class = "UILabel"; text = "(+10.25%)"; ObjectID = "hIs-0M-uol"; */
+"hIs-0M-uol.text" = "(+10.25%)";
+
+/* Class = "UILabel"; text = "USD"; ObjectID = "mqc-SD-Zmz"; */
+"mqc-SD-Zmz.text" = "USD";
+
+/* Class = "UILabel"; text = "Initial date of investment"; ObjectID = "oHH-cX-Vw1"; */
+"oHH-cX-Vw1.text" = "Initial date of investment";
+
+/* Class = "UILabel"; text = "Gain"; ObjectID = "pVy-0O-1kw"; */
+"pVy-0O-1kw.text" = "Gain";
+
+/* Class = "UILabel"; text = "+100.25"; ObjectID = "rXt-ft-k5U"; */
+"rXt-ft-k5U.text" = "+100.25";
+
+/* Class = "UILabel"; text = "(USD)"; ObjectID = "zP9-Fe-W8l"; */
+"zP9-Fe-W8l.text" = "(USD)";
