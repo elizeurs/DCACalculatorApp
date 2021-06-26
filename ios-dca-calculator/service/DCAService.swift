@@ -22,11 +22,14 @@ struct DCAService {
     
     let currentValue =  getCurrentValue(numberOfShares: numberOfShares, latestSharePrice: latestSharePrice)
     
+    let isProfitable = currentValue > investmentAmount
+    
     return .init(currentValue: currentValue,
                  investmentAmount: investmentAmount,
                  gain: 0,
                  yield: 0,
-                 annualReturn: 0)
+                 annualReturn: 0,
+                 isProfitable: isProfitable)
     
     // currentValue = numberOfShares (initial + DCA) * latest share price
   }
@@ -72,4 +75,5 @@ struct DCAResult {
   let gain: Double
   let yield: Double
   let annualReturn: Double
+  let isProfitable: Bool
 }

@@ -12,4 +12,8 @@ extension Double {
   var stringValue: String {
     return String(self)
   }
+  
+  var twoDecimalPlaceString: String {
+    return String(format: "%.2f", self)
+  }
 }
