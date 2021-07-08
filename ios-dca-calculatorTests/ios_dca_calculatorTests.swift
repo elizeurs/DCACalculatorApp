@@ -26,6 +26,12 @@ class ios_dca_calculatorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method Ain the class.
     }
   
+  // test cases
+  // 1. asset = winning | dca = true
+  // 2. asset = winning | dca = false
+  // 3. asset = losing | dca = true
+  // 4. asset = losing | dca = false
+  
   // format for test function name
   // what
   // given
