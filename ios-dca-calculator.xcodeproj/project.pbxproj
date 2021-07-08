@@ -8,17 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		50386EAD830053D7A7E2DD9E /* Pods_ios_dca_calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C2F3E53B3907C9B3330DA7 /* Pods_ios_dca_calculator.framework */; };
+		750F3F41268512D600286E32 /* DCAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3F40268512D600286E32 /* DCAService.swift */; };
+		750F3F4426851A2500286E32 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3F4326851A2500286E32 /* Double+Extensions.swift */; };
+		75301134267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75301133267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift */; };
+		7540BC632683DD0F005700A2 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7540BC622683DD0F005700A2 /* Int+Extensions.swift */; };
+		75438BB8267A5E3600B2D4D8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75438BB7267A5E3600B2D4D8 /* APIService.swift */; };
+		75438BBD267A740F00B2D4D8 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75438BBC267A740F00B2D4D8 /* SearchResults.swift */; };
+		754C93192679591100446A1A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C93182679591100446A1A /* SearchTableViewCell.swift */; };
+		756337742687881500816891 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756337732687881500816891 /* UIColor+Extensions.swift */; };
 		75645579266EB59900DCE32A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75645578266EB59900DCE32A /* AppDelegate.swift */; };
 		7564557B266EB59900DCE32A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564557A266EB59900DCE32A /* SceneDelegate.swift */; };
 		75645580266EB59900DCE32A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7564557E266EB59900DCE32A /* Main.storyboard */; };
 		75645582266EB59C00DCE32A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75645581266EB59C00DCE32A /* Assets.xcassets */; };
 		75645585266EB59C00DCE32A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75645583266EB59C00DCE32A /* LaunchScreen.storyboard */; };
 		7564558E266EBFD900DCE32A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7564558D266EBFD900DCE32A /* Podfile */; };
-		75645597266EC1EC00DCE32A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75645596266EC1EC00DCE32A /* ViewController.swift */; };
+		75645597266EC1EC00DCE32A /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75645596266EC1EC00DCE32A /* SearchTableViewController.swift */; };
+		756A212A26811BB00074C650 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A212926811BB00074C650 /* String+Extensions.swift */; };
+		756A212D26813BF80074C650 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A212C26813BF80074C650 /* UITextField+Extensions.swift */; };
+		756A54AE26822C50001762CF /* DateSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A54AD26822C50001762CF /* DateSelectionTableViewController.swift */; };
+		756A54B126827AFC001762CF /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A54B026827AFC001762CF /* Date+Extensions.swift */; };
+		75B3B3BA268000BB0007B31B /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3B3B9268000BB0007B31B /* CalculatorTableViewController.swift */; };
+		75B3B3BD268002640007B31B /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3B3BC268002640007B31B /* Asset.swift */; };
+		75B55DFB267BE77600B3E7BD /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B55DFA267BE77600B3E7BD /* SearchPlaceholderView.swift */; };
+		75B55DFF267C04EF00B3E7BD /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B55DFE267C04EF00B3E7BD /* UIAnimatable.swift */; };
+		75DBC3EE2696054F005594BA /* ios_dca_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DBC3ED2696054F005594BA /* ios_dca_calculatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75DBC3F02696054F005594BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7564556D266EB59900DCE32A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75645574266EB59900DCE32A;
+			remoteInfo = "ios-dca-calculator";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		40C2F3E53B3907C9B3330DA7 /* Pods_ios_dca_calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_dca_calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750F3F40268512D600286E32 /* DCAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAService.swift; sourceTree = "<group>"; };
+		750F3F4326851A2500286E32 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		75301133267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMontlyAdjusted.swift; sourceTree = "<group>"; };
+		7540BC622683DD0F005700A2 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		75438BB7267A5E3600B2D4D8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		75438BBC267A740F00B2D4D8 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		754C93182679591100446A1A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		756337732687881500816891 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		75645575266EB59900DCE32A /* ios-dca-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dca-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75645578266EB59900DCE32A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7564557A266EB59900DCE32A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +62,18 @@
 		75645584266EB59C00DCE32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75645586266EB59C00DCE32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7564558D266EBFD900DCE32A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		75645596266EC1EC00DCE32A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75645596266EC1EC00DCE32A /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		756A212926811BB00074C650 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		756A212C26813BF80074C650 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		756A54AD26822C50001762CF /* DateSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionTableViewController.swift; sourceTree = "<group>"; };
+		756A54B026827AFC001762CF /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		75B3B3B9268000BB0007B31B /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
+		75B3B3BC268002640007B31B /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		75B55DFA267BE77600B3E7BD /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		75B55DFE267C04EF00B3E7BD /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
+		75DBC3EB2696054F005594BA /* ios-dca-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-dca-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DBC3ED2696054F005594BA /* ios_dca_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_dca_calculatorTests.swift; sourceTree = "<group>"; };
+		75DBC3EF2696054F005594BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FFC68193C355A68F64A9AD4 /* Pods-ios-dca-calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.release.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.release.xcconfig"; sourceTree = "<group>"; };
 		9603BE8751B4280002A78B33 /* Pods-ios-dca-calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.debug.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,14 +87,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75DBC3E82696054F005594BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75438BB6267A5DFF00B2D4D8 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				75438BB7267A5E3600B2D4D8 /* APIService.swift */,
+				750F3F40268512D600286E32 /* DCAService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		75438BBB267A73D700B2D4D8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				75438BBC267A740F00B2D4D8 /* SearchResults.swift */,
+				75301133267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift */,
+				75B3B3BC268002640007B31B /* Asset.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		754C9316267958B500446A1A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				754C93182679591100446A1A /* SearchTableViewCell.swift */,
+				75B55DFA267BE77600B3E7BD /* SearchPlaceholderView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		754C9317267958BE00446A1A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				75645596266EC1EC00DCE32A /* SearchTableViewController.swift */,
+				75B3B3B9268000BB0007B31B /* CalculatorTableViewController.swift */,
+				756A54AD26822C50001762CF /* DateSelectionTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		7564556C266EB59900DCE32A = {
 			isa = PBXGroup;
 			children = (
 				7564558D266EBFD900DCE32A /* Podfile */,
 				75645577266EB59900DCE32A /* ios-dca-calculator */,
+				75DBC3EC2696054F005594BA /* ios-dca-calculatorTests */,
 				75645576266EB59900DCE32A /* Products */,
 				A3710D234F0F98EA2FB75AF4 /* Pods */,
 				CB20341F05CA0A21E03A1CFF /* Frameworks */,
@@ -59,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				75645575266EB59900DCE32A /* ios-dca-calculator.app */,
+				75DBC3EB2696054F005594BA /* ios-dca-calculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,15 +159,50 @@
 		75645577266EB59900DCE32A /* ios-dca-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				756A212826811B900074C650 /* extensions */,
+				75B55DFD267C04D400B3E7BD /* protocol */,
+				75438BBB267A73D700B2D4D8 /* model */,
+				75438BB6267A5DFF00B2D4D8 /* service */,
+				754C9317267958BE00446A1A /* controller */,
+				754C9316267958B500446A1A /* view */,
 				75645578266EB59900DCE32A /* AppDelegate.swift */,
 				7564557A266EB59900DCE32A /* SceneDelegate.swift */,
-				75645596266EC1EC00DCE32A /* ViewController.swift */,
 				7564557E266EB59900DCE32A /* Main.storyboard */,
 				75645581266EB59C00DCE32A /* Assets.xcassets */,
 				75645583266EB59C00DCE32A /* LaunchScreen.storyboard */,
 				75645586266EB59C00DCE32A /* Info.plist */,
 			);
 			path = "ios-dca-calculator";
+			sourceTree = "<group>";
+		};
+		756A212826811B900074C650 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				756A212926811BB00074C650 /* String+Extensions.swift */,
+				756A212C26813BF80074C650 /* UITextField+Extensions.swift */,
+				756A54B026827AFC001762CF /* Date+Extensions.swift */,
+				7540BC622683DD0F005700A2 /* Int+Extensions.swift */,
+				750F3F4326851A2500286E32 /* Double+Extensions.swift */,
+				756337732687881500816891 /* UIColor+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		75B55DFD267C04D400B3E7BD /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				75B55DFE267C04EF00B3E7BD /* UIAnimatable.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		75DBC3EC2696054F005594BA /* ios-dca-calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				75DBC3ED2696054F005594BA /* ios_dca_calculatorTests.swift */,
+				75DBC3EF2696054F005594BA /* Info.plist */,
+			);
+			path = "ios-dca-calculatorTests";
 			sourceTree = "<group>";
 		};
 		A3710D234F0F98EA2FB75AF4 /* Pods */ = {
@@ -116,17 +244,39 @@
 			productReference = 75645575266EB59900DCE32A /* ios-dca-calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		75DBC3EA2696054F005594BA /* ios-dca-calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DBC3F42696054F005594BA /* Build configuration list for PBXNativeTarget "ios-dca-calculatorTests" */;
+			buildPhases = (
+				75DBC3E72696054F005594BA /* Sources */,
+				75DBC3E82696054F005594BA /* Frameworks */,
+				75DBC3E92696054F005594BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DBC3F12696054F005594BA /* PBXTargetDependency */,
+			);
+			name = "ios-dca-calculatorTests";
+			productName = "ios-dca-calculatorTests";
+			productReference = 75DBC3EB2696054F005594BA /* ios-dca-calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7564556D266EB59900DCE32A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					75645574266EB59900DCE32A = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					75DBC3EA2696054F005594BA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 75645574266EB59900DCE32A;
 					};
 				};
 			};
@@ -144,6 +294,7 @@
 			projectRoot = "";
 			targets = (
 				75645574266EB59900DCE32A /* ios-dca-calculator */,
+				75DBC3EA2696054F005594BA /* ios-dca-calculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +308,13 @@
 				75645582266EB59C00DCE32A /* Assets.xcassets in Resources */,
 				7564558E266EBFD900DCE32A /* Podfile in Resources */,
 				75645580266EB59900DCE32A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DBC3E92696054F005594BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,13 +367,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75645597266EC1EC00DCE32A /* ViewController.swift in Sources */,
+				756A54AE26822C50001762CF /* DateSelectionTableViewController.swift in Sources */,
+				756A212D26813BF80074C650 /* UITextField+Extensions.swift in Sources */,
+				75301134267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift in Sources */,
+				75645597266EC1EC00DCE32A /* SearchTableViewController.swift in Sources */,
+				75B55DFF267C04EF00B3E7BD /* UIAnimatable.swift in Sources */,
+				7540BC632683DD0F005700A2 /* Int+Extensions.swift in Sources */,
+				75B3B3BD268002640007B31B /* Asset.swift in Sources */,
+				756A212A26811BB00074C650 /* String+Extensions.swift in Sources */,
+				75B3B3BA268000BB0007B31B /* CalculatorTableViewController.swift in Sources */,
+				756A54B126827AFC001762CF /* Date+Extensions.swift in Sources */,
+				756337742687881500816891 /* UIColor+Extensions.swift in Sources */,
+				75438BB8267A5E3600B2D4D8 /* APIService.swift in Sources */,
+				750F3F41268512D600286E32 /* DCAService.swift in Sources */,
+				750F3F4426851A2500286E32 /* Double+Extensions.swift in Sources */,
+				754C93192679591100446A1A /* SearchTableViewCell.swift in Sources */,
 				75645579266EB59900DCE32A /* AppDelegate.swift in Sources */,
+				75438BBD267A740F00B2D4D8 /* SearchResults.swift in Sources */,
 				7564557B266EB59900DCE32A /* SceneDelegate.swift in Sources */,
+				75B55DFB267BE77600B3E7BD /* SearchPlaceholderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DBC3E72696054F005594BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DBC3EE2696054F005594BA /* ios_dca_calculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75DBC3F12696054F005594BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75645574266EB59900DCE32A /* ios-dca-calculator */;
+			targetProxy = 75DBC3F02696054F005594BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7564557E266EB59900DCE32A /* Main.storyboard */ = {
@@ -393,6 +583,48 @@
 			};
 			name = Release;
 		};
+		75DBC3F22696054F005594BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM55LWG8PP;
+				INFOPLIST_FILE = "ios-dca-calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elizeurs.ios-dca-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-dca-calculator.app/ios-dca-calculator";
+			};
+			name = Debug;
+		};
+		75DBC3F32696054F005594BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM55LWG8PP;
+				INFOPLIST_FILE = "ios-dca-calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elizeurs.ios-dca-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-dca-calculator.app/ios-dca-calculator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +642,15 @@
 			buildConfigurations = (
 				7564558A266EB59C00DCE32A /* Debug */,
 				7564558B266EB59C00DCE32A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DBC3F42696054F005594BA /* Build configuration list for PBXNativeTarget "ios-dca-calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DBC3F22696054F005594BA /* Debug */,
+				75DBC3F32696054F005594BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
