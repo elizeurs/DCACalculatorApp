@@ -27,22 +27,85 @@ class ios_dca_calculatorTests: XCTestCase {
     }
   
   // test cases
-  // 1. asset = winning | dca = true
-  // 2. asset = winning | dca = false
-  // 3. asset = losing | dca = true
-  // 4. asset = losing | dca = false
+  // 1. asset = winning | dca = true => positive gains
+  // 2. asset = winning | dca = false => positive gains
+  // 3. asset = losing | dca = true => negative gains
+  // 4. asset = losing | dca = false => negative gains
   
   // format for test function name
   // what
   // given
   // expectation
   
-  func testDCAResult_givenDollarCostAveragingIsUsed_expectResult() {
+  func testResult_givenWinningAssetAndDCAIsUsed_expectPositiveGains() {
+    // given
+    let initialInvestmentAmount: Double = 5000
+    let monthlyDollarCostAveragingAmount: Double = 1500
+    let initialDateOfInvestmentIndex: Int = 5
+    let asset = buildWinningAsset()
+    // when
+    let result = sut.calculate(asset: asset,
+                               initialInvestmentAmount: initialInvestmentAmount,
+                               monthlyDollarCostAveragingAmount: monthlyDollarCostAveragingAmount,
+                               initialDateOfInvestmentIndex: initialDateOfInvestmentIndex)
+    // then
+    // initial investment: $5000
+    // DCA: $1500 X 5 = $7500
+    // total: $5000 + $7500 = $12500
+    XCTAssertEqual(result.investmentAmount, 12500)
+    XCTAssert(result.isProfitable)
+    
+    // Jan: $5000 / 100 = 50 shares
+    // Feb: $1500 / 110 = 13.6363 shares
+    // March: $1500 / 120 = 12.5 shares
+    // April: $1500 / 130 = 11.5384 shares
+    // May: $1500 / 140 = 10.7142 shares
+    // June: $1500 / 150 = 10 shares
+    // Total shares = 108.3889 shares
+    // Total current value = 108.3889 X $160 (latest month closing price) = $17,342.224
+    
+    XCTAssertEqual(result.currentValue, 17342.224, accuracy: 0.1)
+    XCTAssertEqual(result.gain, 4842.224, accuracy: 0.1)
+    XCTAssertEqual(result.yield, 0.3873, accuracy: 0.0001)
+  }
+  
+  func testResult_givenWinningAssetAndDCAIsNotUsed_expectPositiveGains() {
     
   }
   
-  func testDCAResult_givenDollarCostAveragingIsNotUsed_expectResult() {
+  func testResult_givenLosingAssetAndDCAIsUsed_expectNegativeGains() {
     
+  }
+  
+  func testResult_givenLosingAssetAndDCAIsNotUsed_expectNegativeGains() {
+    
+  }
+  
+  private func buildWinningAsset() -> Asset {
+    let searchResult = buildSearchResult()
+    let meta = buildMeta()
+    let timeSeries: [String : OHLC] = ["2021-01-25" : OHLC(open: "100", close: "110", adjustedClose: "110"),
+                                       "2021-02-25" : OHLC(open: "110", close: "120", adjustedClose: "120"),
+                                       "2021-03-25" : OHLC(open: "120", close: "130", adjustedClose: "130"),
+                                       "2021-04-25" : OHLC(open: "130", close: "140", adjustedClose: "140"),
+                                       "2021-05-25" : OHLC(open: "140", close: "150", adjustedClose: "150"),
+                                       "2021-06-25" : OHLC(open: "150", close: "160", adjustedClose: "160")]
+    
+//   AdjustedOpen = Double(ohlc.open)! * (Double(ohlc.adjustedClose)! / Double(ohlc.close)!)
+//    100 * 110 / 0 = 0
+    
+    let timeSeriesMonthlyAdjusted = TimeSeriesMontlyAdjusted(meta: meta, timeSeries: timeSeries)
+    
+    return Asset(searchResult: searchResult,
+                 timeSeriesMonthlyAdjusted: timeSeriesMonthlyAdjusted)
+  }
+  
+  private func buildSearchResult() -> SearchResult {
+    return SearchResult(symbol: "XYZ", name: "XYZ Company", type: "ETF", currency: "USD")
+  }
+  
+  private func buildMeta() -> Meta  {
+    return Meta(symbol: "XYZ")
   }
   
   func testInvestment_whenDCAIsUsed_expectResult() {
