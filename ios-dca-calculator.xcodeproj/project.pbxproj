@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50386EAD830053D7A7E2DD9E /* Pods_ios_dca_calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C2F3E53B3907C9B3330DA7 /* Pods_ios_dca_calculator.framework */; };
+		750ABE87269A0E2200589BAE /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750ABE86269A0E2200589BAE /* CalculatorPresenter.swift */; };
 		750F3F41268512D600286E32 /* DCAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3F40268512D600286E32 /* DCAService.swift */; };
 		750F3F4426851A2500286E32 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750F3F4326851A2500286E32 /* Double+Extensions.swift */; };
 		75301134267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75301133267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		40C2F3E53B3907C9B3330DA7 /* Pods_ios_dca_calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_dca_calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750ABE86269A0E2200589BAE /* CalculatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
 		750F3F40268512D600286E32 /* DCAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAService.swift; sourceTree = "<group>"; };
 		750F3F4326851A2500286E32 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		75301133267E45E800C4237E /* TimeSeriesMontlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMontlyAdjusted.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				75438BB7267A5E3600B2D4D8 /* APIService.swift */,
 				750F3F40268512D600286E32 /* DCAService.swift */,
+				750ABE86269A0E2200589BAE /* CalculatorPresenter.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				75645597266EC1EC00DCE32A /* SearchTableViewController.swift in Sources */,
 				75B55DFF267C04EF00B3E7BD /* UIAnimatable.swift in Sources */,
 				7540BC632683DD0F005700A2 /* Int+Extensions.swift in Sources */,
+				750ABE87269A0E2200589BAE /* CalculatorPresenter.swift in Sources */,
 				75B3B3BD268002640007B31B /* Asset.swift in Sources */,
 				756A212A26811BB00074C650 /* String+Extensions.swift in Sources */,
 				75B3B3BA268000BB0007B31B /* CalculatorTableViewController.swift in Sources */,

@@ -33,6 +33,7 @@ class CalculatorTableViewController: UITableViewController {
   
   private var subscribers = Set<AnyCancellable>()
   private var dcaService = DCAService()
+  private var calculatorPresenter = CalculatorPresenter()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -101,22 +102,22 @@ class CalculatorTableViewController: UITableViewController {
             let initialDateOfInvestmentIndex = initialDateOfInvestmentIndex,
             let asset = self?.asset else { return }
       
-      let result = self?.dcaService.calculate(asset: asset,
+      guard let this = self else { return }
+      
+      let result = this.dcaService.calculate(asset: asset,
                                               initialInvestmentAmount: initialInvestmentAmount.doubleValue,
                                               monthlyDollarCostAveragingAmount: monthlyDollarCostAveragingAmount.doubleValue,
                                               initialDateOfInvestmentIndex: initialDateOfInvestmentIndex)
       
-      let isProfitable = (result?.isProfitable == true)
-      let gainSymbol = isProfitable ?  "+" : ""
+      let presentation = this.calculatorPresenter.getPresentation(result: result)
       
-      self?.currentValueLabel.backgroundColor = isProfitable ? .themeGreenShade : .themeRedShade
-      self?.currentValueLabel.text = result?.currentValue.currencyFormat
-      self?.investmentAmountLabel.text = result?.investmentAmount.toCurrencyFormat(hasDecimalPlaces: false)
-      self?.gainLabel.text = result?.gain.toCurrencyFormat(hasDollarSymbol: true, hasDecimalPlaces: false).prefix(withText: gainSymbol)
-      self?.yieldLabel.text = result?.yield.percentageFormat.prefix(withText: gainSymbol).addBrackets()
-      self?.yieldLabel.textColor = isProfitable ? .systemGreen : .systemRed
-      self?.annualReturnLabel.text = result?.annualReturn.percentageFormat
-      self?.annualReturnLabel.textColor = isProfitable ? .systemGreen : .systemRed
+      this.currentValueLabel.backgroundColor = presentation.currentValueLabelBackgroundColor
+      this.currentValueLabel.text = presentation.currentValue
+      this.gainLabel.text = presentation.gain
+      this.yieldLabel.text = presentation.yield
+      this.yieldLabel.textColor = presentation.yieldLabelTextColor
+      this.annualReturnLabel.text = presentation.annualReturn
+      this.annualReturnLabel.textColor = presentation.annualReturnLabelTextColor
 
       
 //            print("\(initialInvestmentAmount), \(monthlyDollarCostAveragingAmount), \(initialDateOfInvestmentIndex)")
